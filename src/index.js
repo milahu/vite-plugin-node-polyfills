@@ -2,7 +2,12 @@ import { NodeGlobalsPolyfillPlugin } from '@esbuild-plugins/node-globals-polyfil
 import { NodeModulesPolyfillPlugin } from '@esbuild-plugins/node-modules-polyfill'
 import rollupNodePolyFill from 'rollup-plugin-node-polyfills'
 
+// jsdoc types
+// https://www.typescriptlang.org/docs/handbook/jsdoc-supported-types.html
 
+/** @typedef { import('vite').Plugin } Plugin */
+
+/** @return Plugin */
 export const nodePolyfills = (_options = {}) => {
   return {
     name: 'vite-plugin-node-polyfills',
