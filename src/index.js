@@ -1,9 +1,9 @@
 import { NodeGlobalsPolyfillPlugin } from '@esbuild-plugins/node-globals-polyfill'
 import { NodeModulesPolyfillPlugin } from '@esbuild-plugins/node-modules-polyfill'
 import rollupNodePolyFill from 'rollup-plugin-node-polyfills'
-import type { Plugin } from 'vite'
 
-export const nodePolyfills = (_options = {}): Plugin => {
+
+export const nodePolyfills = (_options = {}) => {
   return {
     name: 'vite-plugin-node-polyfills',
     // @ts-expect-error The rollupNodePolyFill() function does not match the Vite expected type signature.
