@@ -2,6 +2,10 @@
 
 A Vite plugin to polyfill native Node modules for the browser
 
+## Status
+
+:warning: **Deprecated** in favor of https://github.com/sodatea/vite-plugin-node-stdlib-browser
+
 ## Getting Started
 
 Install the package as a dev dependency.
